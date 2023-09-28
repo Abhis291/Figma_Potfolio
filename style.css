@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Heebo", sans-serif;
+}
+
+:root {
+    --main-color: #21243D;
+    --primary-color: #888888;
+    --button-background: #FF6464;
+    --background-color: #e2efff;
+}
+
+
+h1,h2{
+    /* font-family:'Heebo'; */
+    font-weight: 400 ;
+    color: var(--main-color);
+}
+
+h3{
+    /* font-family:'Heebo'; */
+    font-weight: 300 ;
+    color: var(--main-color);
+}
+
+h4{
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #21243D;
+}
+
+p,a,li,button{
+    font-family:'Heebo';
+    color: var(--primary-color);
+}
+p{
+    font-size: 16px;
+    line-height: 23.5px;
+    font-style: normal;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+    color: #000000;
+}
+button{
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/* ------------------------OUR MENU ------------------------------- */
+
+header nav .right-side-menu{
+    /* background-color: #FF6464; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 6rem;  
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .right-side-menu a {
+    margin-right: 9rem;
+}
+
+header nav .right-side-menu a li {
+    font-size: 2rem;
+    text-transform: capitalize;
+    /* margin-top: 3rem; */
+}
+header nav .right-side-menu a li:hover{
+    color: #FF6464;
+}
+
+/* ---------------------OUR HERO SECTION ---------------------------------- */
+.main-hero-section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    padding: 0 25rem;
+    /* justify-content: space-between; */
+}
+
+.main-hero-section .hero-left-side {
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.main-hero-section .hero-left-side h1{
+    font-size: 44px;
+    width: 50rem;
+    text-transform: capitalize;
+}
+
+.main-hero-section .hero-left-side p {
+    width: 50rem;
+    padding: 3rem 0;
+}
+
+.main-hero-section .hero-left-side button{
+    width: 20rem;
+    background-color: var(--button-background);
+    color: #fff;
+}
+
+.main-hero-section .hero-right-side {
+    width: 30%;
+    height: 90vh;
+    /* background-color: #21243D; */
+    display: flex;
+   
+    align-items: center;
+}
+
+
+ /* =========================
+      2nd SECTION  
+=============================== */
+.second-section{
+    /* background-color: #FF6464; */
+    width: 100%;
+    height: 90vh;
+    padding: 0 25rem;
+}
+
+.second-section .top-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    /* background-color: #21243D; */
+}
+
+.second-section .top-section h3{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 400;
+    /* position: absolute; */
+}
+
+.second-section .top-section p{
+    font-size: 16px;
+    color: #00A8CC;
+    text-transform: capitalize;
+}
+
+.second-section .bottom-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: #FF6464; */
+    
+}
+ /* ================
+             LEFT SECTION 
+ ============= */
+.second-section .bottom-section .left-section{
+    width: 100%;
+    height: 100%;
+    margin: 0 2rem;
+}
+
+.second-section .bottom-section .left-section h4 {
+   
+    width: 40rem;
+   
+}
+
+.second-section .bottom-section .left-section .dates {
+  display: flex;
+  /* background-color: #00A8CC; */
+  width: 30rem;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.second-section .bottom-section .left-section .dates p{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #21243D;
+}
+
+.second-section .bottom-section .left-section p{
+    font-size: 16px;
+    width: 40rem;
+}
+
+ /* =========================
+             RIGHT SECTION 
+ ============================ */
+
+ .second-section .bottom-section .right-section{
+    width: 100%;
+    height: 100%;
+    margin: 0 2rem; 
+}
+
+.second-section .bottom-section .right-section h4 {
+    /* font-size: 26px; */
+    width: 40rem;
+    /* text-transform: capitalize; */
+}
+
+.second-section .bottom-section .right-section .dates {
+    display: flex;
+    /* background-color: #00A8CC; */
+    width: 30rem;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  .second-section .bottom-section .right-section .dates p{
+      text-transform: capitalize;
+      font-size: 18px;
+      color: #21243D;
+  }
+
+.second-section .bottom-section .right-section p{
+    font-size: 16px;
+    width: 40rem;
+    /* background-color: #00A8CC; */
+}
+
+ /* =========================
+      3nd SECTION  
+=============================== */
+
+.third-section{
+    /* background-color: #FF6464; */
+    width: 100%;
+    height:100vh;
+    padding: 0 25rem;
+    margin-bottom: 3rem;
+}
+
+.third-section .top-section h2 {
+    /* background-color: #00A8CC; */
+    width: 20rem;
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+/* ================
+        bottom section 
+================ */
+
+.feature1{
+    /* background-color: #21243D; */
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.feature1 .right-side{
+    /* background-color: #00A8CC; */
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.feature1 .right-side .year{
+    display: flex;
+    /* background-color: #e2efff; */
+    width: 25rem;
+   
+}
+
+/* .feature1 .right-side .year #button-1 {
+    width: 5rem;
+    background-color: #00A8CC;
+    font-size: 1.5rem;
+}
+
+.feature1 .right-side .year
+
+.feature1 .right-side .year button{
+    background-color: #FF6464;
+    width: 6.5rem;
+    height: 2.5rem;
+    border-radius: 18px;
+}
+
+.feature1 .right-side .year button li{
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+} */
+
+.feature1 .right-side .year p{
+    text-transform: capitalize;
+}
+
+.feature1 .right-side p{
+    /* background-color: #21243D; */
+    width: 60rem;
+    font-size: 16px;
+    color: #21243D;
+}
+
+/* feature2  */
+.feature2{
+    /* background-color: #21243D; */
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.feature2 .right-side{
+    /* background-color: #00A8CC; */
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.feature2 .right-side .year{
+    display: flex;
+    /* background-color: #e2efff; */
+    width: 25rem;
+   
+}
+
+.feature2 .right-side .year p{
+    text-transform: capitalize;
+}
+
+.feature2 .right-side p{
+    /* background-color: #21243D; */
+    width: 60rem;
+    font-size: 16px;
+    color: #21243D;
+}
+
+/* feature 3  */
+.feature3{
+    /* background-color: #21243D; */
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.feature3 .right-side{
+    /* background-color: #00A8CC; */
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.feature3 .right-side .year{
+    display: flex;
+    /* background-color: #e2efff; */
+    width: 25rem;
+   
+}
+
+.feature3 .right-side .year p{
+    text-transform: capitalize;
+}
+
+.feature3 .right-side p{
+    /* background-color: #21243D; */
+    width: 60rem;
+    font-size: 16px;
+    color: #21243D;
+}
+
+/* =========================
+             FOOTER SECTION 
+ ============================ */
+
+footer{
+    /* background-color: #00A8CC; */
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo{
+    /* background-color: #000000; */
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+footer p{
+    color: #21243D;
+}
+
+/* =========================
+             Responsive mobile
+ ============================ */
+
+ @media (max-width:420px){
+    header nav .right-side-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 6rem;  
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+
+ }
